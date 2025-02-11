@@ -1,0 +1,19 @@
+.example-box {
+    width: 300px;
+    height: 200px;
+    background-color: lightblue;
+    position: relative;
+    cursor: default;
+    /* Prevent unintended drag */
+}
+
+[cdkDragHandle] {
+    cursor: move;
+    pointer-events: all;
+    display: inline-block;
+}
+
+.cdk-drag {
+    user-select: none;
+    pointer-events: none;
+}
